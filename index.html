@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Github Users</title>
+    <link rel="icon" href="icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+
+    <header>
+        <div id="left-items">
+            <input type="text" name="user-search" id="user-search" placeholder="Enter username..." onchange="fetchUserData()" required autofocus autocomplete="name">
+            <button id="theme-change-btn" onclick="setTheme()">☾</button>
+        </div>
+    </header>
+
+    <hr>
+
+    <main>
+        <div id="card">
+            <div id="left">
+                <div>
+                    <img id="user-pfp" alt="user-pfp">
+                </div>
+                <h1 id="username"></h1>
+                <div id="user-id"></div>
+                <div id="user-gh-link-container"><a id="user-gh-link" target="_blank"></a></div>
+            </div>
+            <div id="line"></div>
+            <div id="right">
+                
+                <div id="top-right-info">
+                    <div>
+                        <div id="number-of-followers"></div>
+                        <div id="followers-text">Followers</div>
+                    </div>
+                    <div>
+                        <div id="number-of-following"></div>
+                        <div id="following-text">Following</div>
+                    </div>
+                    <div>
+                        <div id="number-of-repos"></div>
+                        <div id="repos-text">Repositories</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <hr>
+            <p id="footer-text">Copyright &copy; </p>
+        <hr>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
